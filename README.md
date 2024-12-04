@@ -11,6 +11,7 @@ The LLM API Benchmark Tool is a flexible Go-based utility designed to measure an
 - 🔍 Flexible Configuration
 - 📝 Markdown Result Reporting
 - 🌐 Compatible with Any OpenAI-Like API
+- 📏 Arbitrary Length Dynamic Input Prompt Generation
 
 ## Performance Metrics Measured
 
@@ -51,6 +52,7 @@ llmapibenchmark_windows_amd64.exe -base_url=https://your-api-endpoint.com/v1
   -model=gpt-3.5-turbo \
   -concurrency=1,2,4,8,16 \
   -max_tokens=512 \
+  -numWords=513 \
   -prompt="Your custom prompt here"
 ```
 
@@ -62,6 +64,7 @@ llmapibenchmark_windows_amd64.exe ^
   -model=gpt-3.5-turbo ^
   -concurrency=1,2,4,8,16 ^
   -max_tokens=512 ^
+  -numWords=513 ^
   -prompt="Your custom prompt here"
 ```
 
@@ -74,6 +77,7 @@ llmapibenchmark_windows_amd64.exe ^
 | `-model`      | Specific AI model to test                        | Automatically discovers first available model                                      | No       |
 | `-concurrency`| Comma-separated concurrency levels to test       | `1,2,4,8,16,32,64,128`                                                            | No       |
 | `-max_tokens` | Maximum tokens to generate per request           | `512`                                                                             | No       |
+| `-numWords`   | Number of words for dynamic prompt generation    | Not set (optional)                                                                | No       |
 | `-prompt`     | Text prompt for generating responses             | `"Write a long story, no less than 10,000 words, starting from a long, long time ago."` | No       |
 
 ## Output
@@ -96,6 +100,7 @@ The tool generates:
 - Compare different models
 - Monitor for consistent performance
 - Be mindful of API rate limits
+- Use `-numWords` to control input length
 
 ## Limitations
 
