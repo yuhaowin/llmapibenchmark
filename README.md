@@ -28,6 +28,24 @@ The LLM API Benchmark Tool is a flexible Go-based utility designed to measure an
    - Provides both minimum and maximum TTFT
    - Critical for understanding real-time responsiveness
 
+## Example Output
+```
+Input Tokens: 45
+Output Tokens: 512
+Test Model: Qwen2.5-7B-Instruct-AWQ
+Latency: 2.20 ms
+```
+
+| Concurrency | Generation Throughput (tokens/s) |  Prompt Throughput (tokens/s) | Min TTFT (s) | Max TTFT (s) |
+|-------------|----------------------------------|-------------------------------|--------------|--------------|
+|           1 |                            58.49 |                        846.81 |         0.05 |         0.05 |
+|           2 |                           114.09 |                        989.94 |         0.08 |         0.09 |
+|           4 |                           222.62 |                       1193.99 |         0.11 |         0.15 |
+|           8 |                           414.35 |                       1479.76 |         0.11 |         0.24 |
+|          16 |                           752.26 |                       1543.29 |         0.13 |         0.47 |
+|          32 |                           653.94 |                       1625.07 |         0.14 |         0.89 |
+
+
 ## Usage
 
 ### Minimal Configuration
