@@ -47,6 +47,7 @@ Latency: 2.20 ms
 
 
 ## Usage
+### [Quick Start Guide](https://pikoo.de/posts/llm_api_performance_evaluation_tool_guide/)
 
 ### Minimal Configuration
 
