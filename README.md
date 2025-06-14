@@ -73,9 +73,6 @@ Latency: 2.20 ms
 |          32 |                           653.94 |                       1625.07 |         0.14 |         0.89 |
 
 
-## Usage
-### [Quick Start Guide](https://pikoo.de/posts/llm_api_performance_evaluation_tool_guide/)
-
 ### Minimal Configuration
 
 **macOS:**
