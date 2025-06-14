@@ -2,12 +2,11 @@ package api
 
 import (
 	"context"
+	"github.com/sashabaranov/go-openai"
 	"log"
 	"math"
 	"sync"
 	"time"
-
-	"github.com/sashabaranov/go-openai"
 )
 
 // MeasureTTFT calculates the maximum and minimum Time to First Token (TTFT) for API responses.

@@ -11,7 +11,7 @@ import (
 func ParseConcurrencyLevels(concurrencyStr string) ([]int, error) {
 	// Split string
 	strLevels := strings.Split(concurrencyStr, ",")
-	
+
 	// Convert to integers
 	concurrencyLevels := make([]int, 0, len(strLevels))
 	for _, levelStr := range strLevels {
@@ -29,5 +29,3 @@ func ParseConcurrencyLevels(concurrencyStr string) ([]int, error) {
 	sort.Ints(concurrencyLevels)
 	return concurrencyLevels, nil
 }
-
-

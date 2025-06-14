@@ -13,7 +13,7 @@ func PrintBenchmarkHeader(modelName string, inputTokens int, maxTokens int, late
 		`
 ################################################################################################################
 				          LLM API Throughput Benchmark
-				    https://github.com/Yoosu-L/llmapibenchmark
+				    https://github.com/yuhaowin/llmapibenchmark
 					 Time：%s
 ################################################################################################################`
 

@@ -4,6 +4,33 @@
 
 The LLM API Benchmark Tool is a flexible Go-based utility designed to measure and analyze the performance of OpenAI-compatible API endpoints across different concurrency levels. This tool provides in-depth insights into API throughput, generation speed, and token processing capabilities.
 
+## Build Instructions
+
+### Prerequisites
+- Go 1.20 or higher
+- Git
+
+### Building from Source
+
+**macOS/Linux:**
+```bash
+chmod +x build.sh
+./build.sh
+```
+
+**Windows:**
+```cmd
+build.bat
+```
+
+The built binaries will be placed in the `bin` directory. The Linux builds (`amd64` and `arm64`) are suitable for most common server environments.
+- macOS (Intel): `bin/llmapibenchmark_darwin_amd64`
+- macOS (Apple Silicon): `bin/llmapibenchmark_darwin_arm64`
+- Linux (amd64): `bin/llmapibenchmark_linux_amd64`
+- Linux (arm64): `bin/llmapibenchmark_linux_arm64`
+- Windows (amd64): `bin/llmapibenchmark_windows_amd64.exe`
+- Windows (arm64): `bin/llmapibenchmark_windows_arm64.exe`
+
 ## Key Features
 
 - 🚀 Dynamic Concurrency Testing
@@ -51,21 +78,37 @@ Latency: 2.20 ms
 
 ### Minimal Configuration
 
+**macOS:**
+```bash
+# For Intel Macs
+./bin/llmapibenchmark_darwin_amd64 -base_url=https://your-api-endpoint.com/v1
+# For Apple Silicon Macs
+./bin/llmapibenchmark_darwin_arm64 -base_url=https://your-api-endpoint.com/v1
+```
+
 **Linux:**
 ```bash
-./llmapibenchmark_linux_amd64 -base_url=https://your-api-endpoint.com/v1
+# For amd64 servers/desktops
+./bin/llmapibenchmark_linux_amd64 -base_url=https://your-api-endpoint.com/v1
+# For arm64 servers/desktops
+./bin/llmapibenchmark_linux_arm64 -base_url=https://your-api-endpoint.com/v1
 ```
 
 **Windows:**
 ```cmd
-llmapibenchmark_windows_amd64.exe -base_url=https://your-api-endpoint.com/v1
+REM For amd64 systems
+bin\llmapibenchmark_windows_amd64.exe -base_url=https://your-api-endpoint.com/v1
+REM For arm64 systems
+bin\llmapibenchmark_windows_arm64.exe -base_url=https://your-api-endpoint.com/v1
 ```
 
 ### Full Configuration
 
-**Linux:**
+Replace `./llmapibenchmark_os_arch` or `llmapibenchmark_os_arch.exe` with the appropriate binary from the `bin` directory for your system.
+
+**Example for macOS (Apple Silicon):**
 ```bash
-./llmapibenchmark_linux_amd64 \
+./bin/llmapibenchmark_darwin_arm64 \
   -base_url=https://your-api-endpoint.com/v1 \
   -apikey=YOUR_API_KEY \
   -model=gpt-3.5-turbo \
@@ -75,9 +118,9 @@ llmapibenchmark_windows_amd64.exe -base_url=https://your-api-endpoint.com/v1
   -prompt="Your custom prompt here"
 ```
 
-**Windows:**
+**Example for Windows (amd64):**
 ```cmd
-llmapibenchmark_windows_amd64.exe ^
+bin\llmapibenchmark_windows_amd64.exe ^
   -base_url=https://your-api-endpoint.com/v1 ^
   -apikey=YOUR_API_KEY ^
   -model=gpt-3.5-turbo ^

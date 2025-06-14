@@ -1,12 +1,10 @@
 package utils
 
 import (
+	"github.com/sashabaranov/go-openai"
+	"github.com/yuhaowin/llmapibenchmark/internal/api"
 	"sync"
 	"time"
-
-	"github.com/Yoosu-L/llmapibenchmark/internal/api"
-
-	"github.com/sashabaranov/go-openai"
 )
 
 // MeasureSpeed measures API generation throughput and TTFT.

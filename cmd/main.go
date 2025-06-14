@@ -3,12 +3,10 @@ package main
 import (
 	"flag"
 	"fmt"
-	"log"
-
 	"github.com/sashabaranov/go-openai"
-
-	"github.com/Yoosu-L/llmapibenchmark/internal/api"
-	"github.com/Yoosu-L/llmapibenchmark/internal/utils"
+	"github.com/yuhaowin/llmapibenchmark/internal/api"
+	"github.com/yuhaowin/llmapibenchmark/internal/utils"
+	"log"
 )
 
 func main() {
