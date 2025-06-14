@@ -4,6 +4,13 @@
 
 The LLM API Benchmark Tool is a flexible Go-based utility designed to measure and analyze the performance of OpenAI-compatible API endpoints across different concurrency levels. This tool provides in-depth insights into API throughput, generation speed, and token processing capabilities.
 
+## Download and Installation
+```bash
+# Download and grant execute permissions
+wget https://github.com/yuhaowin/llmapibenchmark/releases/download/v1.0.0/llmapibenchmark_darwin_arm64 -O ./llmapibenchmark_darwin_arm64
+chmod +x ./llmapibenchmark_darwin_arm64
+```
+
 ## Build Instructions
 
 ### Prerequisites
