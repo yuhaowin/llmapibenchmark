@@ -136,15 +136,15 @@ bin\llmapibenchmark_windows_amd64.exe ^
 
 ## Command-Line Parameters
 
-| Parameter      | Description                                      | Default                                                                           | Required |
-|---------------|--------------------------------------------------|-----------------------------------------------------------------------------------|----------|
-| `-base_url`   | Base URL for LLM API endpoint                    | Empty (MUST be specified)                                                         | Yes      |
-| `-apikey`     | API authentication key                           | None                                                                              | No       |
-| `-model`      | Specific AI model to test                        | Automatically discovers first available model                                      | No       |
-| `-concurrency`| Comma-separated concurrency levels to test       | `1,2,4,8,16,32,64,128`                                                            | No       |
-| `-max_tokens` | Maximum tokens to generate per request           | `512`                                                                             | No       |
-| `-numWords`   | Number of words for input prompt    | Not set (optional)                                                                | No       |
-| `-prompt`     | Text prompt for generating responses             | `"Write a long story, no less than 10,000 words, starting from a long, long time ago."` | No       |
+| Parameter         | Description                                | Default                                                                                 | Required |
+|-------------------|--------------------------------------------|-----------------------------------------------------------------------------------------|----------|
+| `-base_url`       | Base URL for LLM API endpoint              | Empty (MUST be specified)                                                               | Yes      |
+| `-apikey`         | API authentication key                     | None                                                                                    | No       |
+| `-model`          | Specific AI model to test                  | Automatically discovers first available model                                           | No       |
+| `-concurrency`    | Comma-separated concurrency levels to test | `1,2,4,8,16,32,64,128`                                                                  | No       |
+| `-max_tokens`     | Maximum tokens to generate per request     | `512`                                                                                   | No       |
+| `-numWords`       | Number of words for input prompt           | Not set (optional)                                                                      | No       |
+| `-prompt`         | Text prompt for generating responses       | `"Write a long story, no less than 10,000 words, starting from a long, long time ago."` | No       |
 
 ## Output
 
