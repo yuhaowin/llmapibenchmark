@@ -7,7 +7,7 @@ The LLM API Benchmark Tool is a flexible Go-based utility designed to measure an
 ## Download and Installation
 ```bash
 # Download and grant execute permissions
-wget https://github.com/yuhaowin/llmapibenchmark/releases/download/v1.0.0/llmapibenchmark_darwin_arm64 -O ./llmapibenchmark_darwin_arm64
+wget https://github.com/yuhaowin/llmapibenchmark/releases/download/v1.0.1/llmapibenchmark_darwin_arm64 -O ./llmapibenchmark_darwin_arm64
 chmod +x ./llmapibenchmark_darwin_arm64
 ```
 
