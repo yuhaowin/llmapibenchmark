@@ -17,7 +17,7 @@ func PrintBenchmarkHeader(modelName string, inputTokens int, maxTokens int, late
 					 Time：%s
 ################################################################################################################`
 
-	fmt.Printf(banner+"\n", time.Now().UTC().Format("2006-01-02 15:04:05 UTC+0"))
+	fmt.Printf(banner+"\n", time.Now().Format("2006-01-02 15:04:05 MST"))
 	fmt.Printf("Input Tokens: %d\n", inputTokens)
 	fmt.Printf("Output Tokens: %d\n", maxTokens)
 	fmt.Printf("Test Model: %s\n", modelName)
